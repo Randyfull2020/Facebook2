@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cvRenglon"
+    android:layout_gravity="center"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/colorAccent"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ironman">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="6dp"
+    android:id="@+id/lblnombre"
+    android:layout_toRightOf="@id/icon1"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+
+    android:text="Fulanito"
+    android:textSize="18sp"
+    android:textStyle="bold">
+
+</TextView>
+
+    <TextView
+        android:id="@+id/lblnombre2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblnombre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/icon1"
+        android:text="Hace rato"
+        android:textSize="11sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="1200px"
+        android:layout_height="1200px"
+        android:layout_below="@id/lblnombre3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/sfr" />
+
+    <TextView
+
+        android:id="@+id/lblnombre3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon1"
+        android:layout_marginLeft="8dp"
+
+        android:text="Este es mi bellísimo San Francisco del Rincón Guanajuato. "
+        android:textSize="13sp"
+
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/imageView2"
+        android:layout_marginTop="0dp"
+        android:clickable="true"
+        android:elevation="@dimen/cardview_default_radius"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/likeke" />
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/imageView2"
+        android:layout_toRightOf="@id/imageButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:clickable="true"
+        android:elevation="@dimen/cardview_default_radius"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/comentario" />
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/imageView2"
+        android:layout_toRightOf="@id/imageButton2"
+        android:layout_marginTop="0dp"
+        android:clickable="true"
+        android:elevation="@dimen/cardview_default_radius"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/share" />
+
+</RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
